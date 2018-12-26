@@ -6,9 +6,12 @@ La teoría parece complicada, pero la verdad es más sencillo de lo que parece.
 
 4 Conceptos imprescindibles para OAuth2
 
-/******************************************************************************** 
+/********************************************************************************
+
 1. Roles Oauth2 
-********************************************************************************/      
+
+********************************************************************************/
+
 1.- Propietario del Recurso - Resource Owner
 El propietario del recurso es el usuario que autoriza una aplicación para acceder a su cuenta.
 El acceso de la aplicación a la cuenta del usuario esta limitado al alcance de la autorización otorgada.
@@ -29,9 +32,13 @@ Desde el punto de vista Back-end los desarrolladores tendrán que crear el Servi
 
 Desde el punto de vista de desarrolladores de Aplicaciones Android o iOS, los desarrolladores tendrán que crear el Cliente.
 
+
 /********************************************************************************
+
 2. OAuth2 Tipos de Concesión de Autorización - Authorization Grant types
+
 ********************************************************************************/
+
 Una Concesión de autorización es una credencial que representa la autorización del propietario del recurso para poder acceder a sus recursos protegidos utilizada por el cliente para obtener un token de acceso. 
 	1.- Código de Autorización
 	2.- Implicita
@@ -40,8 +47,11 @@ Una Concesión de autorización es una credencial que representa la autorizació
 En nuestro ejemplo utilizamos la concesión de credenciales de contraseña del propietario del recurso. 
 
 /********************************************************************************
+
 3. Token de OAuth2
+
 ********************************************************************************/
+
 Los tokens son cadenas aleatorias específica de la implementación, son generadas por el servidor de autorización y se emiten cuando el cliente las solicita. 
 Hay dos clases de token en OAuth2
 1.- Token de Acceso: Se envia con cada solicitud, para acceder a un recurso, si el token es valido nos devuelve el recurso sino no. Tiene un tiempo de vida muy corto, ejemplo una hora o menos.
@@ -49,7 +59,10 @@ Hay dos clases de token en OAuth2
 Su duración es mayor que el token de acceso y depende de la seguridad que se le quiera dar al proyecto. 
 
 /********************************************************************************
+
 4.- El Scope del Token de Acceso
+
 ********************************************************************************/
+
 Es decir que el Usuario da al cliente un acceso especifico a sus recursos. Ejemplo que solo pueda leer, o que también pueda escribir.
 En el ejemplo bancario el Usuario solo da acceso a ver sus Movimientos, pero no a hacer operaciones bancarias. 
