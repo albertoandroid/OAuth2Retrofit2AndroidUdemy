@@ -6,9 +6,9 @@ La teoría parece complicada, pero la verdad es más sencillo de lo que parece.
 
 4 Conceptos imprescindibles para OAuth2
 
-/********************************************************************************>
-1. Roles Oauth2>
-********************************************************************************/>
+/******************************************************************************** 
+1. Roles Oauth2 
+********************************************************************************/      
 1.- Propietario del Recurso - Resource Owner
 El propietario del recurso es el usuario que autoriza una aplicación para acceder a su cuenta.
 El acceso de la aplicación a la cuenta del usuario esta limitado al alcance de la autorización otorgada.
